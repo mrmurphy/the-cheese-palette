@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>The Cheese Palette</title>
+    <link rel="stylesheet" href="/admin.css">
+    <link rel="stylesheet" href="/vendor/css/bootstrap-material.min.css">
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]><link rel="shortcut icon" href="/favicon.ico"/><![endif]-->
+  </head>
+  <body>
+    <div id='root'>
+    </div>
+    <script src="/bundle.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var app =
+          Elm.embed(
+            Elm.Main,
+            document.getElementById("root"),
+            {
+              userFromStorage: JSON.parse(
+                localStorage.getItem("user")) || {username: ""},
+              initialPath: window.location.pathname
+            }
+          )
+
+
+          app.ports.saveUser.subscribe(function(user) {
+            localStorage.setItem("user", JSON.stringify(user))
+          })
+      })
+    </script>
+  </body>
+</html>

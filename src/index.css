@@ -1,0 +1,224 @@
+/** Your theme modifications here **/
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.attention {
+  font-weight: 700;
+}
+
+li {
+  list-style: none;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.brandLogoLarge {
+    width: 139px;
+    height: 50px;
+}
+
+.brandLogoSmall {
+    width: 93px;
+    height:60px;
+}
+
+.navbarButton {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    margin-top: -30px;
+}
+
+.pageHome .hero {
+    background-image: url(/img/hero-2.jpg);
+}
+
+.pageBaskets .hero {
+    background-image: url(/img/basket-lg.jpg);
+}
+
+.pageCheeses .hero {
+    background-image: url(/img/hero-cheeses.png);
+}
+
+.pagePlatters .hero {
+    background-image: url(/img/hero-platters.png);
+}
+
+.pageTastings .hero {
+    background-image: url(/img/hero-tastings.png);
+}
+
+@media (max-width: 570px) {
+  .pageHome .rotator {
+    font-size: 5.5vw !important;
+  }
+
+  .pageHome .rotatorWrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.pageHome .rotator {
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+.pageHome .rotator .leftHalf {
+  display: inline-block;
+  text-align: left;
+  padding: .15em;
+}
+
+.pageHome .rotator .rightHalf {
+  display: inline-block;
+  animation: fade 3s infinite;
+  padding: .15em;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .pageHome .features .box {
+    margin-bottom: 0;
+  }
+
+  .pageHome .features {
+    margin-top: 10em;
+    margin-bottom: 10em;
+  }
+}
+
+.pageHome .featureThumb {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .pageHome .featureThumb {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+#footer {
+  margin-top: 4rem;
+}
+
+#footer h1 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: .25em;
+}
+
+.showcase .thumbnail {
+  min-height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 571px) {
+  .showcase .thumbnail {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .showcase .thumbnail {
+    margin: 0;
+    min-height: 150px;
+  }
+}
+
+@media (min-width: 992px) {
+  .showcase .thumbnail {
+    min-height: 170px;
+  }
+}
+
+.showcase .description {
+  color: #888;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+.showcase .price {
+  font-size: 2em;
+  font-weight: 700;
+  margin-right: .5em;
+  display: inline-block;
+  transform: translateY(7px);
+}
+
+.showcase .priceRow {
+  margin-top: .5em;
+  text-align: right;
+}
+
+.pageCheeses .cheese {
+  margin-top: 1.5em;
+}
+
+.pageCheeses h3 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+.pageCheeses h2 {
+  margin-bottom: 2rem;
+}
+
+.pageBaskets h2 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: 1.8em;
+}
+
+.bigLogo {
+  max-width: 150px;
+  display: block;
+  margin: 2em auto;
+}
+
+#copyright a {
+  color: #FFE494;
+}
+
+#copyright {
+  text-align: center;
+}

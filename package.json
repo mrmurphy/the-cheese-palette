@@ -1,0 +1,30 @@
+{
+  "name": "the-cheese-palette",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "deploy": "./bin/deploy.sh",
+    "build": "webpack",
+    "start": "webpack-dev-server --port 4000 --watch"
+  },
+  "engines": {
+    "node": "4.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Murphy Randle",
+  "license": "All rights reserved",
+  "devDependencies": {
+    "autoprefixer": "6.2.3",
+    "css-loader": "0.23.1",
+    "elm-webpack-loader": "1.1.1",
+    "file-loader": "0.8.5",
+    "postcss-loader": "0.8.0",
+    "style-loader": "0.13.0",
+    "webpack": "1.12.9",
+    "webpack-dev-server": "1.14.0"
+  },
+  "dependencies": {}
+}

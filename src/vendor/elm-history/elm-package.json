@@ -1,0 +1,17 @@
+{
+    "version": "1.0.0",
+    "summary": "History API in Elm",
+    "repository": "https://github.com/TheSeamau5/elm-history.git",
+    "license": "BSD3",
+    "source-directories": [
+        "src"
+    ],
+    "exposed-modules": [
+        "History"
+    ],
+    "native-modules": true,
+    "dependencies": {
+        "elm-lang/core": "2.0.0 <= v < 4.0.0"
+    },
+    "elm-version": "0.15.0 <= v < 0.17.0"
+}

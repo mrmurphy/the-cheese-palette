@@ -1,0 +1,157 @@
+.layout {
+  padding-bottom: 2em;
+}
+
+.loginWrapper {
+  margin: 0 auto;
+  margin-top: 6em;
+  max-width: 350px;
+}
+
+.loginWrapper label {
+  display: block;
+}
+
+.loginWrapper input {
+  margin-bottom: 2em;
+}
+
+.loginWrapper h1 {
+  margin-bottom: 2rem;
+}
+
+.loginWrapper .errorMessage {
+  margin-top: 2rem;
+  color: red;
+}
+
+.navbar {
+  border-radius: 0 !important;
+}
+
+.adminProducts .productHeader {
+  margin-bottom: 1em;
+}
+
+.adminProducts .productHeader h2 {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.adminProducts .productHeader button {
+  float: right;
+}
+
+.adminProducts .productList {
+  padding: 0;
+  margin: 0;
+}
+
+.adminProducts .product {
+  list-style: none;
+  border: 1px solid #EEE;
+  border-radius: .4rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, .1);
+  padding: 1em;
+  padding-right: 10em;
+  position: relative;
+  background: white;
+}
+
+.adminProducts .product + .product {
+  margin-top: 2em;
+}
+
+.adminProducts .products .name {
+  font-size: 2em;
+  color: #222;
+}
+
+.adminProducts .products .description {
+  margin-bottom: .5em;
+}
+
+.adminProducts .products .buttonBar {
+  margin-top: 1em;
+}
+
+.adminProducts .products .buttonBar button + button {
+  margin-left: .5em;
+}
+
+.adminProducts .products .thumb {
+  background-size: cover;
+  background-position: center;
+  width: 10em;
+  border-radius: 0 .4rem .4rem 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.editProduct label {
+  margin-top: 1em;
+}
+
+.editProduct .buttonRow {
+  margin-top: 2em;
+  text-align: right;
+  margin-bottom: 2em;
+}
+
+.editProduct .buttonRow .btn {
+  min-width: 10em;
+}
+
+.editProduct .buttonRow .btn + .btn {
+  margin-left: 1em;
+}
+
+.editProduct .thumbPreview {
+  width: 200px;
+  height: 200px;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 1em;
+  background-size: cover;
+  background-position: center;
+  background-color: hsla(210,29%,80%,1);
+}
+
+.products .alert.msg-show {
+  transition: 300ms;
+}
+
+.products .alert.msg-hide {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  transition: 300ms;
+  height: 0;
+  opacity: 0;
+}
+
+.flash {
+  position: fixed;
+  bottom: 0;
+  width: 50vw;
+  right: 1em;
+  z-index: 100000;
+}
+
+.flash .alert.msg-show {
+  transition: 300ms;
+}
+
+.flash .alert.msg-hide {
+  transition: 300ms;
+  opacity: 0;
+  transform: translateY(-5px);
+}
+
+.admin.layout .navbar-brand {
+  margin-top: 13px;
+  height: auto;
+}
